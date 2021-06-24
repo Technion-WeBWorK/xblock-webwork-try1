@@ -40,6 +40,7 @@ import pytz # python timezone
 from pytz import utc
 from xblock.core import XBlock
 from django.utils.translation import ugettext_lazy as _
+from django.utils import translation # FIXME remove after debug
 from xblock.fields import String, Scope, Integer, List, Dict, Float, Boolean, DateTime, UNIQUE_ID
 from xmodule.fields import Date
 from xblock.validation import ValidationMessage
@@ -315,6 +316,7 @@ class WWProblemPeriod:
         self._period = PPeriods.UnKnown
 
 @XBlock.needs("user")
+@XBlock.needs('i18n')
 class WeBWorKXBlock(
     ScorableXBlockMixin, XBlock, StudioEditableXBlockMixin,
     #SubmittingXBlockMixin,  # Needed if using the the submissions API
@@ -1228,6 +1230,8 @@ class WeBWorKXBlock(
             self.seed = random.randint(1,2**31-1)
 
         loading1 = "Your problem should load soon."
+        translation.activate('he')
+        loading1 = _('New title')
         loading2 = "Please wait."
         loadingHtml = "<html><body>{loading1}<br>{loading2}</body></html>"
         mysrcdoc = loadingHtml.format(loading1 = loading1, loading2 = loading2)
@@ -1311,10 +1315,10 @@ class WeBWorKXBlock(
         if self.student_attempts == 0:
             return my_attempts_message
         else:
-            return "Your recorded (best) score is {old_best} points from {max_score} points.{attempts_message}".format(
-                old_best = str(self.best_student_score), max_score = str(self.get_max_score()),
-                attempts_message = my_attempts_message )
-
+            # return _("Your recorded (best) score is {old_best} points from {max_score} points.{attempts_message}").format(
+            #     old_best = str(self.best_student_score), max_score = str(self.get_max_score()),
+            #     attempts_message = my_attempts_message )
+            return _('bla1').format()
 
     def create_score_message(self, new_score, score_saved):
         """
@@ -1335,7 +1339,7 @@ class WeBWorKXBlock(
                         old_best = str(self.best_student_score), attempts_message = my_attempts_message )
         else:
             return "<strong>" + "This is a submission which is not for credit." + "</strong><br>" + \
-                "You score from this submission is {new_score} from {max_score} points.".format(
+                _("You score from this submission is {new_score} from {max_score} points.").format(
                     new_score = str(new_score), max_score = str(self.get_max_score()) ) + "<br>" + \
                 "Your recorded best score on the problem is {old_best} points.".format(
                     new_score = str(new_score), max_score = str(self.get_max_score()), old_best = str(self.best_student_score) )
