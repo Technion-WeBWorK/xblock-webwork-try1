@@ -390,106 +390,112 @@ msgstr ""
 #, python-brace-format
 msgid ""
 "So far you have made {attempts_used} graded submissions to this problem."
-msgstr ""
+msgstr "עד כה הגשת {attempts_used} הגשות עם ציון לבעיה."
 
 #: ../../../webwork.py:1303
 msgid "You have not yet made a graded submission to this problem."
-msgstr ""
+msgstr "עדיין לא הגשת אף הגשה עם ציון לבעיה הנוכחית."
 
 #: ../../../webwork.py:1307
 #, python-brace-format
 msgid ""
 "You are allowed at most {max_attempts} graded submissions to this problem."
-msgstr ""
+msgstr "מספר ההגשות המירבי עם ציון בבעיה זו הוא {max_attempts}."
 
 #: ../../../webwork.py:1312
 msgid ""
 "You are allowed an unlimited number of graded submissions to this problem."
-msgstr ""
+msgstr "בעיה זו אינה מוגבלת בכמות ההגשות"
 
 #: ../../../webwork.py:1325
 #, python-brace-format
 msgid ""
 "Your recorded (best) score is {old_best} points from {max_score} points."
 "{attempts_message}"
-msgstr ""
+msgstr "ציונך המירבי המתועד לבעיה זה הוא {old_best} נקודות מתוך-{max_score} "
+"האפשריות.{attempts_message}"
 
 #: ../../../webwork.py:1340 ../../../webwork.py:1349 ../../../webwork.py:1360
 #, python-brace-format
 msgid "Your score from this submission is {new_score} from {max_score} points."
-msgstr ""
+msgstr "ציונך בהגשה זו הוא {new_score} נקודות מתוך ה-{max_score} האפשריות."
 
 #: ../../../webwork.py:1344
 #, python-brace-format
 msgid ""
 "The new score will replace your prior best score of {old_best} points."
 "{attempts_message}"
-msgstr ""
+msgstr "הציון החדש יחליף את ציונך הקודם של {old_best} נקודות."
+"{attempts_message}"
 
 #: ../../../webwork.py:1353
 #, python-brace-format
 msgid ""
 "That is less than your prior best score of {old_best} points, so the prior "
 "score remains your current recorded score for the problem.{attempts_message}"
-msgstr ""
+msgstr "זהו ציון נמוך מציונך הגבוה עד כה של {old_best} נקודות. הציון הגבוה"
+" הוא זה שנרשם עבור הבעיה.{attempts_message}"
 
 #: ../../../webwork.py:1358
 msgid "This is a submission which is not for credit."
-msgstr ""
+msgstr "הגשה זו אינה מזכה בנקודות."
 
 #: ../../../webwork.py:1364
 #, python-brace-format
 msgid "Your recorded best score on the problem is {old_best} points."
-msgstr ""
+msgstr "ציונך המירבי המתועד לבעיה זה הוא {old_best} נקודות."
 
 #: ../../../webwork.py:1459 ../../../webwork.py:1479 ../../../webwork.py:1639
 #, python-brace-format
 msgid "Additional use of the problem is not permitted until {unlock_datetime}"
-msgstr ""
+msgstr "לא ניתן לצפות בבעיה עד {unlock_datetime}"
 
 #: ../../../webwork.py:1476
 msgid ""
-"Sorry, can't submit now since your made the maximum number of allowed "
+"Sorry, can't submit now since you made the maximum number of allowed "
 "submissions for credit."
-msgstr ""
+msgstr "לצערנו אינך יכול להגיש כעת כיוון שעברת את מספר ההגשת המקסימלי לבעיה."
 
 #: ../../../webwork.py:1493
 #, python-brace-format
 msgid ""
 "You have exceeded the maximum number ({max_attempts}) of graded attempts "
 "allowed on this problem."
-msgstr ""
+msgstr "עברת את מספר הנסיונות המירבי ({max_attempts}) המותר בבעיה זו."
 
 #: ../../../webwork.py:1497
 msgid ""
 "This and additional submissions are allowed, but your recorded grade will "
 "not be changed."
-msgstr ""
+msgstr "תשובה זו ונוספות (אם יהיו) מותרות אך אינן משפיעות על הציון שניתן על"
+" הבעיה"
 
 #: ../../../webwork.py:1498
 msgid "You may now also use the Show Correct Answers button."
-msgstr ""
+msgstr "הנכם מוזמנים להשתמש בכפתור הראה תשובה נכונה"
 
 #: ../../../webwork.py:1678
 #, python-brace-format
 msgid "Answers will become available at {unlock_datetime}"
-msgstr ""
+msgstr "תשובות לבעיה זו יהיו נגישות רק לאחר {unlock_datetime}"
 
 #: ../../../webwork.py:1698
 #, python-brace-format
 msgid ""
 "Answers will become available after you make at {required_to_show} "
 "submissions."
-msgstr ""
+msgstr "תשובות לבעיה זו יהיו נגישות רק לאחר {required_to_show} הגשות של"
+" הבעיה."
 
 #: ../../../webwork.py:1706
 #, python-brace-format
 msgid ""
 "Correct answers for this problem will become available after you submit at "
 "least {required_to_show} answers."
-msgstr ""
+msgstr "תשובות נכונות לבעיה זו יהיו נגישות רק לאחר {required_to_show} הגשות"
+" של הבעיה."
 
 #: ../../../webwork.py:1710
 #, python-brace-format
 msgid "You have already submitted {attempts} answers to be graded."
-msgstr ""
+msgstr "מספר ההגשות שבצעת עד כה הוא {attempts}."
