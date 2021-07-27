@@ -1,3 +1,10 @@
+This was originally a private fork of https://github.com/ofekcensor/xblock-webwork and when that became public the connection was lost.
+As a result, a new fork was created at https://github.com/Technion-WeBWorK/xblock-webwork and the new code was merged into there.
+This repository retains the GitHub history of the private fork.
+All future work should use only the new https://github.com/Technion-WeBWorK/xblock-webwork.
+
+---
+
 WeBWorK-PG XBlock
 =================
 An edX XBlock that uses WeBWorK's PG as its backend.
